@@ -2,6 +2,42 @@ name: eo-datascience-cookbook-dev
 channels:
   - conda-forge
 dependencies:
-  - jupyter-book
+  - aiohttp
+  - bokeh
+  - cartopy
+  - cmcrameri
+  - dask
+  - datashader
+  - folium
+  - geopandas
+  - geoviews
+  - graphviz
+  - holoviews
+  - huggingface_hub
+  - hvplot
+  - intake
+  - intake-xarray
+  - ipywidgets
   - jupyterlab
+  - jupyter-book
+  - mamba
+  - matplotlib
+  - nbformat
+  - nodejs
+  - numpy
+  - odc-stac
+  - openssl
+  - pyproj
+  - pystac-client
+  - python=3.12
+  - rasterio
+  - requests
+  - rioxarray
+  - scikit-image
+  - scipy
+  - seaborn
+  - snaphu
   - sphinx-pythia-theme
+  - stackstac
+  - xarray
+  - zarr=2.18.4
