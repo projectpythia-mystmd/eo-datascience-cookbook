@@ -16,19 +16,17 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-pythia-theme.min.css?v=ba7ce088" />
@@ -39,11 +37,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=d0efeab3" />
   
-  <!-- So that users can add custom icons -->
-  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
@@ -67,12 +64,11 @@
     <link rel="icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Classification of Sentinel-2 imagery" href="../../templates/classification.html" />
+    <link rel="next" title="Templates" href="../../templates/prereqs-templates.html" />
     <link rel="prev" title="Interferograms" href="08_in_class_exercise.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="6 February 2025"/>
+    <meta name="docbuild:last-update" content="6 March 2025"/>
   </head>
   
   
@@ -111,7 +107,7 @@
     
     
     <img src="../../../_static/pythia_logo-white-rtext.svg" class="logo__image only-light" alt="Project Pythia Cookbook Template - Home"/>
-    <img src="../../../_static/pythia_logo-white-rtext.svg" class="logo__image only-dark pst-js-only" alt="Project Pythia Cookbook Template - Home"/>
+    <script>document.write(`<img src="../../../_static/pythia_logo-white-rtext.svg" class="logo__image only-dark" alt="Project Pythia Cookbook Template - Home"/>`);</script>
   
   
 </a></div>
@@ -314,6 +310,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search..."
          aria-label="Search..."
          autocomplete="off"
@@ -354,11 +351,17 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Templates</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../templates/classification.html">Classification of Sentinel-2 imagery</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../templates/prereqs-templates.html">Templates</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../templates/classification.html">Classification of Sentinel-2 imagery</a></li>
+</ul>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/floodmapping.html">Reverend Bayes updates our Belief in Flood Detection</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/prereqs-tutorials.html">Tutorials</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/floodmapping.html">Reverend Bayes updates our Belief in Flood Detection</a></li>
+</ul>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul class="nav bd-sidenav">
@@ -371,14 +374,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
         </div>
@@ -462,7 +460,7 @@ In this notebook we will use the resulting wrapped interferogram from notebook â
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/9e9247a0ac97927f338bbf95575fb1c0ccda77546b933ce50eda90cfc5be54c1.png" src="../../../_images/9e9247a0ac97927f338bbf95575fb1c0ccda77546b933ce50eda90cfc5be54c1.png" />
+<img alt="../../../_images/ff30308457a5669953255a7002bf2ab50c9cf704037daf1cca697c9ab6520d4a.png" src="../../../_images/ff30308457a5669953255a7002bf2ab50c9cf704037daf1cca697c9ab6520d4a.png" />
 </div>
 </div>
 </section>
@@ -632,7 +630,7 @@ The actual unwrapping is essentially an addition of the phase values, such that 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/35e9383f9cd60d59da68d2c4ee242c7ed8cd6da13d976bc90b72664b507914e0.png" src="../../../_images/35e9383f9cd60d59da68d2c4ee242c7ed8cd6da13d976bc90b72664b507914e0.png" />
+<img alt="../../../_images/e6aa768c1503814d15ce4a449419d4d27830602758fbe480dc363445af81c2cc.png" src="../../../_images/e6aa768c1503814d15ce4a449419d4d27830602758fbe480dc363445af81c2cc.png" />
 </div>
 </div>
 </section>
@@ -674,7 +672,7 @@ The actual unwrapping is essentially an addition of the phase values, such that 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/492cf19410596e611c272a383096b4186f6e5ba9f396af8f0fc320f992d83b2a.png" src="../../../_images/492cf19410596e611c272a383096b4186f6e5ba9f396af8f0fc320f992d83b2a.png" />
+<img alt="../../../_images/2a70f0419fe1d74c15187044ec174ae5ae322d39256a2451f391c0b4e1c0af23.png" src="../../../_images/2a70f0419fe1d74c15187044ec174ae5ae322d39256a2451f391c0b4e1c0af23.png" />
 </div>
 </div>
 <p>Letâ€™s see if another threshold value for the coherence mask gives better results.</p>
@@ -706,7 +704,7 @@ The actual unwrapping is essentially an addition of the phase values, such that 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/f7fa6bf42bb76a7a4026f3358e063c0dd5cf7ea408fb05b0d61cd46705bbdbe2.png" src="../../../_images/f7fa6bf42bb76a7a4026f3358e063c0dd5cf7ea408fb05b0d61cd46705bbdbe2.png" />
+<img alt="../../../_images/5d55b992090d0f6fc3d0f1cf89118bf852d2ca05f056283697c8a4874181ee3e.png" src="../../../_images/5d55b992090d0f6fc3d0f1cf89118bf852d2ca05f056283697c8a4874181ee3e.png" />
 </div>
 </div>
 <p>A higher coherence threshold means that only pixels with a coherence value greater than 0.5 will be used for phase unwrapping. This would result in an unwrapping process that is likely more stable, with reduced noise (invalid phase information in the proximity of the earthquake faults is discarded). However, an excessive coherence threshold might have significant gaps or missing information, especially in areas where motion or surface changes have occurred.
@@ -767,7 +765,7 @@ d = - \frac{\lambda}{4 \cdot \pi} \cdot \Delta \phi_d
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/5b45f3fa863f595afe4e0921c94230fadf8db79e19594e5d0efbf3a7576a8967.png" src="../../../_images/5b45f3fa863f595afe4e0921c94230fadf8db79e19594e5d0efbf3a7576a8967.png" />
+<img alt="../../../_images/9246397165b0d2475a8a391d88e94c855a86c2614c82b093f5883f3d2a169254.png" src="../../../_images/9246397165b0d2475a8a391d88e94c855a86c2614c82b093f5883f3d2a169254.png" />
 </div>
 </div>
 </section>
@@ -811,7 +809,7 @@ d = - \frac{\lambda}{4 \cdot \pi} \cdot \Delta \phi_d
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/a6786807c0203036a26daa627ce9d67f9f263bab8883b78cb01238b01c8b9d03.png" src="../../../_images/a6786807c0203036a26daa627ce9d67f9f263bab8883b78cb01238b01c8b9d03.png" />
+<img alt="../../../_images/ffc0cb4adea01812c6f0b94e5eaca75bcbc31ca7c082655c1936232e50ef90a0.png" src="../../../_images/ffc0cb4adea01812c6f0b94e5eaca75bcbc31ca7c082655c1936232e50ef90a0.png" />
 </div>
 </div>
 <p>We can also now calculate the displacement map and compare them.</p>
@@ -830,7 +828,7 @@ d = - \frac{\lambda}{4 \cdot \pi} \cdot \Delta \phi_d
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/09c2e8fbb335cfd674cad53a8106a478204ce3fdb7cdf06e0da5c11d495fe68f.png" src="../../../_images/09c2e8fbb335cfd674cad53a8106a478204ce3fdb7cdf06e0da5c11d495fe68f.png" />
+<img alt="../../../_images/c22f08c6a84d9e88fda1a7607602ff3800429a97049edc4a13b5f1ce5ef62117.png" src="../../../_images/c22f08c6a84d9e88fda1a7607602ff3800429a97049edc4a13b5f1ce5ef62117.png" />
 </div>
 </div>
 <p>Plot a summary of the previous plots:</p>
@@ -869,7 +867,7 @@ d = - \frac{\lambda}{4 \cdot \pi} \cdot \Delta \phi_d
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/9451fab753c765380391b45e509b67350a8b98c1a938a1fe630cf7a1a681011a.png" src="../../../_images/9451fab753c765380391b45e509b67350a8b98c1a938a1fe630cf7a1a681011a.png" />
+<img alt="../../../_images/5d68c1e17ebf585b062229c1eb014f4b19f3af1452a1a5c5a1b6a608e5e4da8a.png" src="../../../_images/5d68c1e17ebf585b062229c1eb014f4b19f3af1452a1a5c5a1b6a608e5e4da8a.png" />
 </div>
 </div>
 <p>In the following animation, we can capture the 3D displacement caused by the Ridgecrest quake by observing the after and before elevation model.</p>
@@ -918,11 +916,11 @@ d = - \frac{\lambda}{4 \cdot \pi} \cdot \Delta \phi_d
       </div>
     </a>
     <a class="right-next"
-       href="../../templates/classification.html"
+       href="../../templates/prereqs-templates.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Classification of Sentinel-2 imagery</p>
+        <p class="prev-next-title">Templates</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1138,16 +1136,24 @@ d = - \frac{\lambda}{4 \cdot \pi} \cdot \Delta \phi_d
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -1185,7 +1191,7 @@ By the <a href="https://projectpythia.org/">Project Pythia</a> Community
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 6 February 2025.
+  Last updated on 6 March 2025.
   <br/>
 </p>
   </div>
@@ -1202,8 +1208,8 @@ By the <a href="https://projectpythia.org/">Project Pythia</a> Community
   </div>
     
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
      
@@ -1239,7 +1245,7 @@ By the <a href="https://projectpythia.org/">Project Pythia</a> Community
         
           By the <a href="https://projectpythia.org/">Project Pythia</a> Community.
         
-          Last updated on 6 February 2025.
+          Last updated on 6 March 2025.
         </p>
       </div>
     </div>
