@@ -102,9 +102,10 @@ need to follow this workflow:
    ```bash
    cd eo-datascience-cookbook
    ```
-1. Create Jupyter kernels
+1. Create and activate your conda environment from the ``environment.yml`` file
    ```bash
-   make kernel
+   conda env create -f environment.yml
+   conda activate eo-datascience-cookbook-dev
    ```
 1. Move into the `notebooks` directory and start up Jupyterlab
    ```bash
