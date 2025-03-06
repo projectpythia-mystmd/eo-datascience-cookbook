@@ -18,10 +18,14 @@ parts:
     - file: notebooks/courses/microwave-remote-sensing/09_in_class_exercise
 - caption: Templates
   chapters:
-  - file: notebooks/templates/classification
+  - file: notebooks/templates/prereqs-templates
+    sections:
+    - file: notebooks/templates/classification
 - caption: Tutorials
   chapters:
-  - file: notebooks/tutorials/floodmapping
+  - file: notebooks/tutorials/prereqs-tutorials
+    sections:
+    - file: notebooks/tutorials/floodmapping
 - caption: References
   chapters:
   - file: notebooks/references
