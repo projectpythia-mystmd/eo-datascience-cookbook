@@ -138,3 +138,5 @@ dmypy.json
 # Data
 data/
 **/data/
+# MyST build outputs
+_build

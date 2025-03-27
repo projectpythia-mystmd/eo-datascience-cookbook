@@ -23,6 +23,7 @@ dependencies:
   - jupyter_bokeh
   - mamba
   - matplotlib
+  - mystmd
   - nbformat
   - nbstripout
   - nodejs
