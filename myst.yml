@@ -1,0 +1,59 @@
+version: 1
+extends:
+  - https://raw.githubusercontent.com/projectpythia-mystmd/pythia-config/main/pythia.yml
+project:
+  title: Earth Observation Data Science Cookbook
+  authors:
+    - name: Wolfgang Wagner
+    - name: Martin Schobben
+    - name: Nikolas Pikall
+    - name: Joseph Wagner
+    - name: Davide Festa
+    - name: Felix David Reuß
+    - name: Luka Jović
+  copyright: '2024'
+  toc:
+    - file: README.md
+    - title: Preamble
+      children:
+        - file: notebooks/how-to-cite.md
+    - title: Courses
+      children:
+        - file: notebooks/courses/microwave-remote-sensing.ipynb
+          children:
+            - file: >-
+                notebooks/courses/microwave-remote-sensing/01_in_class_exercise.ipynb
+            - file: >-
+                notebooks/courses/microwave-remote-sensing/02_in_class_exercise.ipynb
+            - file: >-
+                notebooks/courses/microwave-remote-sensing/03_in_class_exercise.ipynb
+            - file: >-
+                notebooks/courses/microwave-remote-sensing/04_in_class_exercise.ipynb
+            - file: >-
+                notebooks/courses/microwave-remote-sensing/05_in_class_exercise.ipynb
+            - file: >-
+                notebooks/courses/microwave-remote-sensing/06_in_class_exercise.ipynb
+            - file: >-
+                notebooks/courses/microwave-remote-sensing/07_in_class_exercise.ipynb
+            - file: >-
+                notebooks/courses/microwave-remote-sensing/08_in_class_exercise.ipynb
+            - file: >-
+                notebooks/courses/microwave-remote-sensing/09_in_class_exercise.ipynb
+    - title: Templates
+      children:
+        - file: notebooks/templates/prereqs-templates.ipynb
+          children:
+            - file: notebooks/templates/classification.ipynb
+    - title: Tutorials
+      children:
+        - file: notebooks/tutorials/prereqs-tutorials.ipynb
+          children:
+            - file: notebooks/tutorials/floodmapping.ipynb
+  jupyter:
+      binder:
+        repo: projectpythia-mystmd/eo-datascience-cookbook
+site:
+  options:
+    logo: notebooks/images/logos/pythia_logo-white-rtext.svg
+    folders: true
+  template: book-theme
